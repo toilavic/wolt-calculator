@@ -36,7 +36,7 @@ const checkPrice = (cartValue: number, distance: number, items: number, date: an
         SURCHANGE = +SURCHANGE.toFixed(1)
 
         // CHECK DAYTIME => Coefficient
-        COEFFICIENT = checkTime(date)!
+        COEFFICIENT = checkTime(date)
 
         // CALCULATE DISTANCE => DELIVERYFEE
         const FIRST1000 = 1000, FIRST1000_FEE = 2
