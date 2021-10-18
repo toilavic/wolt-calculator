@@ -14,7 +14,7 @@ const checkTime = (date: any) => {
     return 1;
 }
 
-const checkPrice = (cartValue: number, distance: number, items: number, date: any) => {
+const calculator = (cartValue: number, distance: number, items: number, date: any) => {
 
     var SURCHANGE: number = 0, COEFFICIENT: number = 1, DELIVERYFEE: number = 0, TOTAL: number = 0
 
@@ -62,6 +62,4 @@ const checkPrice = (cartValue: number, distance: number, items: number, date: an
     return TOTAL
 }
 
-export {
-    checkPrice
-};
+export default calculator;

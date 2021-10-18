@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './App.module.css'
-import { checkPrice } from './functions/checkPrice'
+import calculator from './calculator'
 import { useForm } from './useForm'
 
 const App = () => {
@@ -28,11 +28,9 @@ const App = () => {
       date
     } = values
 
-    var fee = checkPrice(+cartValue, +distance, +items, date)
+    var fee = calculator(+cartValue, +distance, +items, date)
     setDeliveryFee(fee)
   }
-
-
 
   return (
     <div className={styles.container}>
