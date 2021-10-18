@@ -1,5 +1,5 @@
 import styles from './App.module.css'
-import checkPrice from './functions/checkPrice'
+import { checkPrice } from './functions/checkPrice'
 import { useForm } from './useForm'
 
 const App = () => {
@@ -36,12 +36,12 @@ const App = () => {
       <form onSubmit={onSubmit}>
         <div>
           <span>Cart value: </span>
-          <input name="cartValue" onChange={onChange} type="number" required />
+          <input name="cartValue" onChange={onChange} type="text" required />
         </div>
 
         <div>
           <span>Delivery distance: </span>
-          <input name="distance" onChange={onChange} type="number" required />
+          <input name="distance" onChange={onChange} type="text" required />
         </div>
 
         <div>
@@ -51,7 +51,7 @@ const App = () => {
 
         <div>
           <span>Time: </span>
-          <input type="datetime-local" name="date" onChange={onChange} required />
+          <input type="datetime-local" name="date" data-date-format="DD MMMM YYYY" onChange={onChange} required />
         </div>
 
         <div>
