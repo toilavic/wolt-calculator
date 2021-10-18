@@ -32,6 +32,9 @@ const checkPrice = (cartValue: number, distance: number, items: number, date: an
         // COUNT ITEMS => SURCHANGE
         if (items >= STARTITEMTOSURCHARGE) SURCHANGE += (items + 1 - STARTITEMTOSURCHARGE) * SURCHARGEPERORDERPRICE
 
+        // ROUND THE SURCHANGE TO 1 DECIMAL
+        SURCHANGE = +SURCHANGE.toFixed(1)
+
         // CHECK DAYTIME => Coefficient
         COEFFICIENT = checkTime(date)!
 
@@ -45,7 +48,7 @@ const checkPrice = (cartValue: number, distance: number, items: number, date: an
         else DELIVERYFEE = FIRST1000_FEE + ROUNDED_COEF_500 * ADDITION500_FEE
 
         // DF vs SURCHANGE
-        const CALCULATOR = DELIVERYFEE * COEFFICIENT + SURCHANGE
+        const CALCULATOR = +(DELIVERYFEE * COEFFICIENT + SURCHANGE).toFixed(1)
         const MAX_FEE = 15;
 
         CALCULATOR >= MAX_FEE ? TOTAL = MAX_FEE : TOTAL = CALCULATOR
@@ -53,11 +56,12 @@ const checkPrice = (cartValue: number, distance: number, items: number, date: an
         console.log("-------------------- INPUT --------------------")
         console.log(cartValue, distance, items, date)
         console.log("-------------------- OUTPUT -------------------")
-        console.log("SURCHANGE:",SURCHANGE, "COEFFICIENT:",COEFFICIENT, "DELIVERYFEE:",DELIVERYFEE, "TOTAL FEE: ",TOTAL)
+        console.log("SURCHANGE:",SURCHANGE, "COEFFICIENT:",COEFFICIENT, "DELIVERYFEE:",DELIVERYFEE, "TOTAL FEE:",TOTAL)
     }
+
+    return TOTAL
 }
 
 export {
-    checkPrice,
-    checkTime
+    checkPrice
 };

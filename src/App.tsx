@@ -1,9 +1,10 @@
+import { useState } from 'react'
 import styles from './App.module.css'
 import { checkPrice } from './functions/checkPrice'
 import { useForm } from './useForm'
 
 const App = () => {
-  
+
   const initialState = {
     cartValue: Number,
     distance: Number,
@@ -12,12 +13,13 @@ const App = () => {
   };
 
   const { onChange, onSubmit, values } = useForm(
-    loginUserCallback,
+    calculateFee,
     initialState
   );
 
+  const [deliveryFee, setDeliveryFee] = useState(0)
 
-  function loginUserCallback() {
+  function calculateFee() {
 
     var {
       cartValue,
@@ -26,7 +28,8 @@ const App = () => {
       date
     } = values
 
-    checkPrice(+cartValue, +distance, +items, date)
+    var fee = checkPrice(+cartValue, +distance, +items, date)
+    setDeliveryFee(fee)
   }
 
 
@@ -36,12 +39,12 @@ const App = () => {
       <form onSubmit={onSubmit}>
         <div>
           <span>Cart value: </span>
-          <input name="cartValue" onChange={onChange} type="text" required />
+          <input name="cartValue" onChange={onChange} type="number" step=".01" required />
         </div>
 
         <div>
           <span>Delivery distance: </span>
-          <input name="distance" onChange={onChange} type="text" required />
+          <input name="distance" onChange={onChange} type="number" required />
         </div>
 
         <div>
@@ -51,7 +54,7 @@ const App = () => {
 
         <div>
           <span>Time: </span>
-          <input type="datetime-local" name="date" data-date-format="DD MMMM YYYY" onChange={onChange} required />
+          <input type="datetime-local" name="date" onChange={onChange} required />
         </div>
 
         <div>
@@ -60,7 +63,7 @@ const App = () => {
       </form>
 
       <div>
-        <span>Delivery Fee Calculator: Price</span>
+        <span>Delivery Fee Calculator: {deliveryFee}</span>
       </div>
     </div>
   )
