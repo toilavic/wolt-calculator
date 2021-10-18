@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 // useForm functional componen
@@ -8,8 +7,6 @@ export const useForm = (callback: any, initialState = {
     items: Number,
     date: Date
 }) => {
-
-    console.log(initialState)
 
     const [values, setValues] = useState(initialState);
 

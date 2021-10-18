@@ -1,5 +1,5 @@
 import styles from './App.module.css'
-
+import checkPrice from './functions/checkPrice'
 import { useForm } from './useForm'
 
 const App = () => {
@@ -18,14 +18,15 @@ const App = () => {
 
 
   function loginUserCallback() {
-    const {
+
+    var {
       cartValue,
       distance,
       items,
       date
     } = values
 
-    console.log(cartValue)
+    checkPrice(+cartValue, +distance, +items, date)
   }
 
 
@@ -50,7 +51,7 @@ const App = () => {
 
         <div>
           <span>Time: </span>
-          <input type="date" name="date" onChange={onChange} required />
+          <input type="datetime-local" name="date" onChange={onChange} required />
         </div>
 
         <div>
