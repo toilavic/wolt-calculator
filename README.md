@@ -1,7 +1,7 @@
 # Wolt Coding Assignment - Delivery Fee Calculator
 
 Pre-assignment for Junior Engineers program , preview
-### Site: https://616de2f5e344742ab435047d--sleepy-ardinghelli-24a39f.netlify.app/
+### Site: https://616e9ad24d61630007a3ca0a--sleepy-ardinghelli-24a39f.netlify.app/
 
 # Requirements:
 Docker, docker-compose, npm to run script
