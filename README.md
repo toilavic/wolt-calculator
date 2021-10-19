@@ -3,32 +3,51 @@
 Pre-assignment for Junior Engineers program , preview
 ### Site: https://sleepy-ardinghelli-24a39f.netlify.app/
 
-# Requirements:
-Docker, docker-compose, npm to run script
+## Requirements:
+
+#### Docker, docker-compose to run script
+
+### Or if you don't install them yet, you can run:
+
+#### `sh install.sh` to install docker and docker-compose
+
+### Or just skip them, and `npm` instead to use the application manually.
+
+
+## Install
+
+#### `make up-app` to install and run automatically the app
+#### Then, open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+#### `make install-app` to install the application with docker
+
+### OR
+
+#### `npm i && npm start` to run app manually
+
+## Test: Unit test with Jest and React Testing. Automation test with Selenium IDE.
+
+#### `npm run test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### OR
+
+#### Import `calculator.side` to Selenium IDE to run all the tests from test suite.
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `make up-app` to run the the app
+#### `make logs` to see logs
 
-### `make logs` to see logs
+#### `make into-app` to use docker exec
 
-### `make into-app` to use docker exec
+## Build
 
-### `make install-app` to install the application
-
-# OR
-
-### `npm i && npm start` to run app manually
-
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.

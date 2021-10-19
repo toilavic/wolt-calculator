@@ -1,0 +1,675 @@
+{
+  "id": "8bb2e5ef-e750-44ed-ad92-8ec93d3986f8",
+  "version": "2.0",
+  "name": "calculator",
+  "url": "https://616e9ad24d61630007a3ca0a--sleepy-ardinghelli-24a39f.netlify.app",
+  "tests": [{
+    "id": "c7a73259-466a-40b0-be98-911091fb1121",
+    "name": "SURCHARGE: PRICE IS LESS THAN 10",
+    "commands": [{
+      "id": "8e4aa747-da81-4399-ad14-8a44e265a6bf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ecd2b20-37cd-4d50-9643-6961431a0406",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "508x940",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "985ac835-a0a9-42ae-81b6-5b8eed4c0f4d",
+      "comment": "",
+      "command": "type",
+      "target": "name=cartValue",
+      "targets": [
+        ["name=cartValue", "name"],
+        ["css=div:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cartValue']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8.9"
+    }, {
+      "id": "c1de2336-6feb-4e82-a557-b45f6ade2260",
+      "comment": "",
+      "command": "type",
+      "target": "name=distance",
+      "targets": [
+        ["name=distance", "name"],
+        ["css=div:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='distance']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "f2b0a180-a1a7-4114-a8e3-6f929dd3a926",
+      "comment": "",
+      "command": "type",
+      "target": "name=items",
+      "targets": [
+        ["name=items", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='items']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "684e72ec-8a61-4a26-a67f-1ca7aa9570fe",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=div:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2021-10-19T14:33"
+    }, {
+      "id": "6930ef11-0844-47e6-bd78-b75b7f664bbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Calculate delivery price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d5436dd-6403-4b7e-91b0-e7ff8464ce31",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.App_container__1MQN3 > div > span",
+      "targets": [
+        ["css=.App_container__1MQN3 > div > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Delivery Price: 3.1 €')]", "xpath:innerText"]
+      ],
+      "value": "Delivery Price: 3.1 €"
+    }]
+  }, {
+    "id": "e19f993b-dfea-452b-b94a-27075ee14dea",
+    "name": "SURCHARGE: ITEMS IS MORE THAN 5",
+    "commands": [{
+      "id": "c574e6ed-c5ef-48f1-b783-da91849a9af0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21c079da-38a4-4a1e-91e0-c8ed0df4ca6e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "508x940",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "328460c3-c1b1-479d-b284-08f5769d5630",
+      "comment": "",
+      "command": "type",
+      "target": "name=cartValue",
+      "targets": [
+        ["name=cartValue", "name"],
+        ["css=div:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cartValue']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "2a5c6c4b-bbdc-4931-aa68-ed2bc83d6d6a",
+      "comment": "",
+      "command": "type",
+      "target": "name=distance",
+      "targets": [
+        ["name=distance", "name"],
+        ["css=div:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='distance']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "2bee6d35-6ff0-4416-b9eb-b713deac9272",
+      "comment": "",
+      "command": "type",
+      "target": "name=items",
+      "targets": [
+        ["name=items", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='items']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "59f06f61-a3b3-46bb-8929-a8b399d4f84c",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=div:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2021-10-19T14:33"
+    }, {
+      "id": "8a21547d-8bce-455e-a790-d632d8ee90f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Calculate delivery price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3317ac79-0b38-41d5-9042-1f1e43ddfab8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.App_container__1MQN3 > div > span",
+      "targets": [
+        ["css=.App_container__1MQN3 > div > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Delivery Price: 3.1 €')]", "xpath:innerText"]
+      ],
+      "value": "Delivery Price: 2.5 €"
+    }]
+  }, {
+    "id": "464d1b04-b382-455f-9dfb-3ef74c55a7f5",
+    "name": "FRIDAY RUSH",
+    "commands": [{
+      "id": "5a9341be-48be-4c0d-8a0a-6dc561b94e38",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6c6252e-fd41-487b-a75f-3b47717941ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "508x940",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa24454c-49ef-409e-8124-a715887c432a",
+      "comment": "",
+      "command": "type",
+      "target": "name=cartValue",
+      "targets": [
+        ["name=cartValue", "name"],
+        ["css=div:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cartValue']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "eb1ec809-3103-48f6-833e-86b2fcf6fffe",
+      "comment": "",
+      "command": "type",
+      "target": "name=distance",
+      "targets": [
+        ["name=distance", "name"],
+        ["css=div:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='distance']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "ae93aac3-8e97-4297-91a0-c29dd7e252d8",
+      "comment": "",
+      "command": "type",
+      "target": "name=items",
+      "targets": [
+        ["name=items", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='items']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "c24fd2a9-0a85-4266-aa2f-975d525fc7e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=div:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2021-10-22T17:00"
+    }, {
+      "id": "5c075151-4b40-4a77-8a7b-3b969c40f1db",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Calculate delivery price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0072889f-8277-4fed-8268-c110e30f711b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.App_container__1MQN3 > div > span",
+      "targets": [
+        ["css=.App_container__1MQN3 > div > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Delivery Price: 3.1 €')]", "xpath:innerText"]
+      ],
+      "value": "Delivery Price: 2.2 €"
+    }]
+  }, {
+    "id": "0572d2a2-5ac2-4839-b7f1-7cb2c952878a",
+    "name": "DISTANCE: FIRST 1000M",
+    "commands": [{
+      "id": "994c19ee-3fb3-4dd9-8b9c-f4d4d0e2f946",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1013baf6-b6ff-4834-927e-80a64a2d8f86",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "508x940",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06d69952-0306-4324-9d97-b56d5ea86cf3",
+      "comment": "",
+      "command": "type",
+      "target": "name=cartValue",
+      "targets": [
+        ["name=cartValue", "name"],
+        ["css=div:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cartValue']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "199f72b7-1070-4dd3-be53-96fe3db9c74d",
+      "comment": "",
+      "command": "type",
+      "target": "name=distance",
+      "targets": [
+        ["name=distance", "name"],
+        ["css=div:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='distance']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "980c78d0-6b3a-44bc-9f28-7ab3d12b6fce",
+      "comment": "",
+      "command": "type",
+      "target": "name=items",
+      "targets": [
+        ["name=items", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='items']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "463d0fe3-c338-4069-8d87-985388837f74",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=div:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2021-10-19T14:33"
+    }, {
+      "id": "0a5544b9-582f-41ad-9a68-231c331e8dfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Calculate delivery price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74986c24-4996-4b17-8cd0-93b5c1d4d328",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.App_container__1MQN3 > div > span",
+      "targets": [
+        ["css=.App_container__1MQN3 > div > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Delivery Price: 3.1 €')]", "xpath:innerText"]
+      ],
+      "value": "Delivery Price: 2 €"
+    }]
+  }, {
+    "id": "6d642055-0d80-4513-a21b-de271c668125",
+    "name": "DISTANCE: ADDITION 500M",
+    "commands": [{
+      "id": "43d217c9-d15d-4550-805b-bf00a91ef114",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31c41ab2-f6b0-4c04-9c80-b641d54e4941",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "508x940",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04cd4ed2-365e-43bf-b5ca-de176b007518",
+      "comment": "",
+      "command": "type",
+      "target": "name=cartValue",
+      "targets": [
+        ["name=cartValue", "name"],
+        ["css=div:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cartValue']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "c7f7d3f2-90df-4261-beac-3c8478ac116c",
+      "comment": "",
+      "command": "type",
+      "target": "name=distance",
+      "targets": [
+        ["name=distance", "name"],
+        ["css=div:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='distance']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1499"
+    }, {
+      "id": "f04b33a9-61cd-4a79-b6e2-2cbfe2ab7b07",
+      "comment": "",
+      "command": "type",
+      "target": "name=items",
+      "targets": [
+        ["name=items", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='items']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "e918bb59-bf3c-41db-a97d-9b7492d81fb7",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=div:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2021-10-19T14:33"
+    }, {
+      "id": "ed2e5680-cdd7-4dd8-a4ee-9286ddc4aac8",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Calculate delivery price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ef0e05d-f8b0-4545-9f49-ebf1f5c58cee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.App_container__1MQN3 > div > span",
+      "targets": [
+        ["css=.App_container__1MQN3 > div > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Delivery Price: 3.1 €')]", "xpath:innerText"]
+      ],
+      "value": "Delivery Price: 3 €"
+    }]
+  }, {
+    "id": "479cef28-cfa1-4b1a-a1f2-f6f64f40c4ee",
+    "name": "FREE ORDER",
+    "commands": [{
+      "id": "ef49a7da-c35e-4245-881a-0e09ac8807ab",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14b3d8e6-41b6-450b-b94a-166e7aa4912b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "508x940",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a6c5ae9-d3dc-40a0-af4f-b3f2e3b32d49",
+      "comment": "",
+      "command": "type",
+      "target": "name=cartValue",
+      "targets": [
+        ["name=cartValue", "name"],
+        ["css=div:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cartValue']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "aa5664ee-fdd3-4a83-b996-1ad10a644912",
+      "comment": "",
+      "command": "type",
+      "target": "name=distance",
+      "targets": [
+        ["name=distance", "name"],
+        ["css=div:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='distance']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "8dafa5c5-acb3-4dad-8b2e-e4e23db9443f",
+      "comment": "",
+      "command": "type",
+      "target": "name=items",
+      "targets": [
+        ["name=items", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='items']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "6f7c931e-8134-420d-a700-457efc03a3b2",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=div:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2021-10-19T14:33"
+    }, {
+      "id": "98c959d9-6fb6-4c53-b090-aadc7b35da11",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Calculate delivery price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4131120d-baf9-452a-815b-88863b3fa676",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.App_container__1MQN3 > div > span",
+      "targets": [
+        ["css=.App_container__1MQN3 > div > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Delivery Price: 3.1 €')]", "xpath:innerText"]
+      ],
+      "value": "Delivery Price: 0 €"
+    }]
+  }, {
+    "id": "c3e15dea-9537-4e54-a794-582a531d5e8b",
+    "name": "MAX FEE",
+    "commands": [{
+      "id": "1754c4bc-7ab8-4a75-b83d-e64b626a33b4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57c53967-f962-408c-92f5-53de9444b4fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "508x940",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25ef7dc3-5770-42d4-8d2c-7ad58e25bf4d",
+      "comment": "",
+      "command": "type",
+      "target": "name=cartValue",
+      "targets": [
+        ["name=cartValue", "name"],
+        ["css=div:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='cartValue']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "60"
+    }, {
+      "id": "ee204fd4-25ed-40ef-85ec-24c00f584698",
+      "comment": "",
+      "command": "type",
+      "target": "name=distance",
+      "targets": [
+        ["name=distance", "name"],
+        ["css=div:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='distance']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "2500"
+    }, {
+      "id": "c329fcd3-b296-4fba-8e64-12f2cf7d5c6d",
+      "comment": "",
+      "command": "type",
+      "target": "name=items",
+      "targets": [
+        ["name=items", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='items']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "389f08c2-ff1e-4a49-9375-3b6586f34ced",
+      "comment": "",
+      "command": "type",
+      "target": "name=date",
+      "targets": [
+        ["name=date", "name"],
+        ["css=div:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='date']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2021-10-22T17:00"
+    }, {
+      "id": "bee703ca-5d09-4042-8ff3-1b80c0063ce7",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Calculate delivery price']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfd7a19c-0728-4044-a860-7cbf9a1e93c8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.App_container__1MQN3 > div > span",
+      "targets": [
+        ["css=.App_container__1MQN3 > div > span", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Delivery Price: 3.1 €')]", "xpath:innerText"]
+      ],
+      "value": "Delivery Price: 15 €"
+    }]
+  }],
+  "suites": [{
+    "id": "cb99571f-2834-4a34-b1a9-6ed2e1080c78",
+    "name": "Calculator-test",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6d642055-0d80-4513-a21b-de271c668125", "0572d2a2-5ac2-4839-b7f1-7cb2c952878a", "479cef28-cfa1-4b1a-a1f2-f6f64f40c4ee", "464d1b04-b382-455f-9dfb-3ef74c55a7f5", "c3e15dea-9537-4e54-a794-582a531d5e8b", "e19f993b-dfea-452b-b94a-27075ee14dea", "c7a73259-466a-40b0-be98-911091fb1121"]
+  }],
+  "urls": ["https://616e9ad24d61630007a3ca0a--sleepy-ardinghelli-24a39f.netlify.app/"],
+  "plugins": []
+}
