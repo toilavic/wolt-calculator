@@ -37,17 +37,17 @@ const App = () => {
       <form onSubmit={onSubmit} className={styles.form}>
         <div>
           <span>Cart value </span>
-          <input name="cartValue" placeholder = "€" onChange={onChange} type="number" step=".01" required />
+          <input name="cartValue" placeholder = "€" onChange={onChange} type="number" min="0" step=".01" required />
         </div>
 
         <div>
           <span>Delivery distance </span>
-          <input name="distance" placeholder = "m" onChange={onChange} type="number" required />
+          <input name="distance" placeholder = "m" onChange={onChange} min="0" type="number" required />
         </div>
 
         <div>
           <span>Amount of items </span>
-          <input name="items" onChange={onChange} type="number" required />
+          <input name="items" onChange={onChange} type="number" min="0" required />
         </div>
 
         <div>
