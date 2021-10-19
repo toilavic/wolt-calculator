@@ -37,31 +37,32 @@ const App = () => {
       <form onSubmit={onSubmit} className={styles.form}>
         <div>
           <span>Cart value </span>
-          <input name="cartValue" placeholder = "€" onChange={onChange} type="number" min="0" step=".01" required />
+          <input data-testid="cart-value" name="cartValue" placeholder = "€" onChange={onChange} type="number" min="0" step=".01" required />
         </div>
 
         <div>
           <span>Delivery distance </span>
-          <input name="distance" placeholder = "m" onChange={onChange} min="0" type="number" required />
+          <input data-testid="delivery-distance" name="distance" placeholder = "m" onChange={onChange} min="0" type="number" required />
         </div>
 
         <div>
           <span>Amount of items </span>
-          <input name="items" onChange={onChange} type="number" min="0" required />
+          <input data-testid="items" name="items" onChange={onChange} type="number" min="0" required />
         </div>
 
         <div>
           <span>Time </span>
-          <input type="datetime-local" name="date" onChange={onChange} required />
+          <input data-testid="time" type="datetime-local" name="date" onChange={onChange} required />
         </div>
 
         <div>
-          <input type="submit" value="Calculate delivery price" />
+          <input data-testid="btn-submit" type="submit" value="Calculate delivery price" />
         </div>
       </form>
 
       <div>
-        <span>Delivery Price: {deliveryFee} €</span>
+        <span>Delivery Price: </span>
+        <span data-testid="delivery-fee">{deliveryFee}</span> €
       </div>
     </div>
   )
