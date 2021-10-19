@@ -16,14 +16,13 @@ Pre-assignment for Junior Engineers program , preview
 
 ## Install
 
-#### `make up-app` to install and run automatically the app
-#### Then, open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-#### `make install-app` to install the application with docker
+#### `make install-app up-app` to install and run the application with docker
 
 ### OR
 
 #### `npm i && npm start` to run app manually
+
+### Then, open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Test: Unit test with Jest and React Testing. Automation test with Selenium IDE.
 
