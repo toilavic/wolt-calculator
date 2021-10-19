@@ -1,7 +1,7 @@
 # Wolt Coding Assignment - Delivery Fee Calculator
 
 Pre-assignment for Junior Engineers program , preview
-### Site: https://616e9ad24d61630007a3ca0a--sleepy-ardinghelli-24a39f.netlify.app/
+### Site: https://sleepy-ardinghelli-24a39f.netlify.app/
 
 # Requirements:
 Docker, docker-compose, npm to run script
@@ -9,30 +9,31 @@ Docker, docker-compose, npm to run script
 ## Available Scripts
 
 In the project directory, you can run:
-### `make up` to run the the app
 
-# OR
-
-### `make up-app` to run the front-end
-### `make up-backend` to run the backend
+### `make up-app` to run the the app
 
 ### `make logs` to see logs
 
 ### `make into-app` to use docker exec
-### `make into-backend` to run the backend
 
-### `make install` to install the application
+### `make install-app` to install the application
 
 # OR
 
 ### `npm i && npm start` to run app manually
 
-# PREVIEW
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view frontend in the browser.
+### `npm test`
 
-Open [http://localhost:4000](http://localhost:4000) to view backend in the browser.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
